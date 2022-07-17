@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsPlanner", "..\EventsPlanner\EventsPlanner.csproj", "{703B010D-5D61-403C-9112-C62DBBBB398B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{703B010D-5D61-403C-9112-C62DBBBB398B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{703B010D-5D61-403C-9112-C62DBBBB398B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{703B010D-5D61-403C-9112-C62DBBBB398B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{703B010D-5D61-403C-9112-C62DBBBB398B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF94A7AA-F527-4130-B473-4D4E025143B5}
+	EndGlobalSection
+EndGlobal
