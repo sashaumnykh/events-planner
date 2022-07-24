@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EventsPlanner
 {
-    public class Entities
+    public class Event
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -15,7 +15,7 @@ namespace EventsPlanner
         public string Notes { get; set; }
         public int? NotifyBeforeInMinutes { get; set; }
 
-        public Entities()
+        public Event()
         {
 
         }
