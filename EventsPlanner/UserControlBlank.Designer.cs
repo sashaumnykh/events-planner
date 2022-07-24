@@ -43,20 +43,25 @@ namespace EventsPlanner
             // 
             // lEventName
             // 
+            this.lEventName.AutoEllipsis = true;
             this.lEventName.AutoSize = true;
             this.lEventName.Font = new System.Drawing.Font("Montserrat Subrayada", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lEventName.Location = new System.Drawing.Point(54, 23);
+            this.lEventName.Location = new System.Drawing.Point(15, 27);
+            this.lEventName.MaximumSize = new System.Drawing.Size(225, 60);
             this.lEventName.Name = "lEventName";
             this.lEventName.Size = new System.Drawing.Size(136, 19);
             this.lEventName.TabIndex = 0;
             this.lEventName.Text = "Name of event";
+            this.lEventName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lEventName.Click += new System.EventHandler(this.lEventName_Click);
             // 
             // lEventNotes
             // 
+            this.lEventNotes.AutoEllipsis = true;
             this.lEventNotes.AutoSize = true;
             this.lEventNotes.Font = new System.Drawing.Font("Montserrat Subrayada", 8F, System.Drawing.FontStyle.Bold);
             this.lEventNotes.Location = new System.Drawing.Point(15, 219);
+            this.lEventNotes.MaximumSize = new System.Drawing.Size(225, 50);
             this.lEventNotes.Name = "lEventNotes";
             this.lEventNotes.Size = new System.Drawing.Size(77, 14);
             this.lEventNotes.TabIndex = 1;
@@ -64,9 +69,10 @@ namespace EventsPlanner
             // 
             // lEventStart
             // 
+            this.lEventStart.AutoEllipsis = true;
             this.lEventStart.AutoSize = true;
             this.lEventStart.Font = new System.Drawing.Font("Montserrat Subrayada", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lEventStart.Location = new System.Drawing.Point(14, 85);
+            this.lEventStart.Location = new System.Drawing.Point(17, 117);
             this.lEventStart.Name = "lEventStart";
             this.lEventStart.Size = new System.Drawing.Size(101, 19);
             this.lEventStart.TabIndex = 2;
@@ -76,7 +82,7 @@ namespace EventsPlanner
             // 
             this.lEventEnd.AutoSize = true;
             this.lEventEnd.Font = new System.Drawing.Font("Montserrat Subrayada", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lEventEnd.Location = new System.Drawing.Point(14, 114);
+            this.lEventEnd.Location = new System.Drawing.Point(17, 146);
             this.lEventEnd.Name = "lEventEnd";
             this.lEventEnd.Size = new System.Drawing.Size(85, 19);
             this.lEventEnd.TabIndex = 2;
