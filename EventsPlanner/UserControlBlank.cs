@@ -37,20 +37,7 @@ namespace EventsPlanner
         private void btnDeleteEvent_Click(object sender, EventArgs e)
         {
             var id = Int32.Parse(this.lEventId.Text);
-            DeleteEvent(id);
-        }
-
-        public void DeleteEvent(int id)
-        {
-            SqlConnection conn = db.getConnection();
-            conn.Open();
-            String sql = $"DELETE FROM Events WHERE Id = {id}";
-            SqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = sql;
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Deleted");
-            cmd.Dispose();
-            conn.Close();
+            Database.DeleteEvent(id);
         }
 
         private void lMinutes_Click(object sender, EventArgs e)
