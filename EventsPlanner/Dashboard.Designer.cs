@@ -96,9 +96,10 @@ namespace EventsPlanner
             // 
             // lEventNotification
             // 
+            this.lEventNotification.AutoEllipsis = true;
             this.lEventNotification.AutoSize = true;
             this.lEventNotification.Font = new System.Drawing.Font("Montserrat Subrayada", 12F, System.Drawing.FontStyle.Bold);
-            this.lEventNotification.Location = new System.Drawing.Point(31, 158);
+            this.lEventNotification.Location = new System.Drawing.Point(29, 195);
             this.lEventNotification.MaximumSize = new System.Drawing.Size(300, 300);
             this.lEventNotification.Name = "lEventNotification";
             this.lEventNotification.Size = new System.Drawing.Size(0, 19);
@@ -108,7 +109,7 @@ namespace EventsPlanner
             // tbSearch
             // 
             this.tbSearch.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSearch.Location = new System.Drawing.Point(26, 159);
+            this.tbSearch.Location = new System.Drawing.Point(25, 160);
             this.tbSearch.Multiline = true;
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.Size = new System.Drawing.Size(167, 20);
