@@ -47,7 +47,7 @@ namespace EventsPlanner
             // 
             // numNotifyMinutes
             // 
-            this.numNotifyMinutes.Location = new System.Drawing.Point(134, 268);
+            this.numNotifyMinutes.Location = new System.Drawing.Point(156, 269);
             this.numNotifyMinutes.Name = "numNotifyMinutes";
             this.numNotifyMinutes.Size = new System.Drawing.Size(53, 20);
             this.numNotifyMinutes.TabIndex = 17;
@@ -55,6 +55,7 @@ namespace EventsPlanner
             // 
             // btnSave
             // 
+            this.btnSave.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(185, 328);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(82, 23);
@@ -65,6 +66,7 @@ namespace EventsPlanner
             // 
             // btnCancel
             // 
+            this.btnCancel.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(52, 328);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(82, 23);
@@ -97,9 +99,10 @@ namespace EventsPlanner
             // lNewEventInfo
             // 
             this.lNewEventInfo.AutoSize = true;
+            this.lNewEventInfo.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lNewEventInfo.Location = new System.Drawing.Point(51, 208);
             this.lNewEventInfo.Name = "lNewEventInfo";
-            this.lNewEventInfo.Size = new System.Drawing.Size(85, 13);
+            this.lNewEventInfo.Size = new System.Drawing.Size(125, 14);
             this.lNewEventInfo.TabIndex = 7;
             this.lNewEventInfo.Text = "Additional notes:";
             this.lNewEventInfo.UseWaitCursor = true;
@@ -107,46 +110,51 @@ namespace EventsPlanner
             // lMinutes
             // 
             this.lMinutes.AutoSize = true;
-            this.lMinutes.Location = new System.Drawing.Point(200, 275);
+            this.lMinutes.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lMinutes.Location = new System.Drawing.Point(215, 275);
             this.lMinutes.Name = "lMinutes";
-            this.lMinutes.Size = new System.Drawing.Size(46, 13);
+            this.lMinutes.Size = new System.Drawing.Size(62, 14);
             this.lMinutes.TabIndex = 8;
             this.lMinutes.Text = "minutes.";
             // 
             // lNotify
             // 
             this.lNotify.AutoSize = true;
+            this.lNotify.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lNotify.Location = new System.Drawing.Point(51, 275);
             this.lNotify.Name = "lNotify";
-            this.lNotify.Size = new System.Drawing.Size(67, 13);
+            this.lNotify.Size = new System.Drawing.Size(99, 14);
             this.lNotify.TabIndex = 9;
             this.lNotify.Text = "Notify before";
             // 
             // lNewEventEnd
             // 
             this.lNewEventEnd.AutoSize = true;
+            this.lNewEventEnd.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lNewEventEnd.Location = new System.Drawing.Point(51, 148);
             this.lNewEventEnd.Name = "lNewEventEnd";
-            this.lNewEventEnd.Size = new System.Drawing.Size(46, 13);
+            this.lNewEventEnd.Size = new System.Drawing.Size(60, 14);
             this.lNewEventEnd.TabIndex = 10;
             this.lNewEventEnd.Text = "Ends at:";
             // 
             // lNewEventStart
             // 
             this.lNewEventStart.AutoSize = true;
+            this.lNewEventStart.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lNewEventStart.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lNewEventStart.Location = new System.Drawing.Point(51, 88);
             this.lNewEventStart.Name = "lNewEventStart";
-            this.lNewEventStart.Size = new System.Drawing.Size(49, 13);
+            this.lNewEventStart.Size = new System.Drawing.Size(72, 14);
             this.lNewEventStart.TabIndex = 11;
             this.lNewEventStart.Text = "Starts at:";
             // 
             // lbNewEventName
             // 
             this.lbNewEventName.AutoSize = true;
+            this.lbNewEventName.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNewEventName.Location = new System.Drawing.Point(51, 28);
             this.lbNewEventName.Name = "lbNewEventName";
-            this.lbNewEventName.Size = new System.Drawing.Size(38, 13);
+            this.lbNewEventName.Size = new System.Drawing.Size(44, 14);
             this.lbNewEventName.TabIndex = 12;
             this.lbNewEventName.Text = "Name:";
             // 
