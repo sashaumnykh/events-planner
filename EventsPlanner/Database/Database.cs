@@ -46,12 +46,12 @@ namespace EventsPlanner
             {
                 res = new Event()
                 {
-                    Id = DeNullInt(reader["ID"]),
-                    Name = DeNullString(reader["Name"]),
-                    Notes = DeNullString(reader["AdditionalInfo"]),
-                    StartDate = GetNullableDateTime(reader["StartDate"]),
-                    EndDate = GetNullableDateTime(reader["EndDate"]),
-                    NotifyBeforeInMinutes = DeNullInt(reader["NotifyBeforeInMinutes"])
+                    Id = DBHelper.DeNullInt(reader["ID"]),
+                    Name = DBHelper.DeNullString(reader["Name"]),
+                    Notes = DBHelper.DeNullString(reader["AdditionalInfo"]),
+                    StartDate = DBHelper.GetNullableDateTime(reader["StartDate"]),
+                    EndDate = DBHelper.GetNullableDateTime(reader["EndDate"]),
+                    NotifyBeforeInMinutes = DBHelper.DeNullInt(reader["NotifyBeforeInMinutes"])
                 };
             }
             cmd.Dispose();
@@ -127,12 +127,12 @@ namespace EventsPlanner
                     res.Add(
                         new Event
                         {
-                            Id = DeNullInt(reader["ID"]),
-                            Name = DeNullString(reader["Name"]),
-                            Notes = DeNullString(reader["AdditionalInfo"]),
-                            StartDate = GetNullableDateTime(reader["StartDate"]),
-                            EndDate = GetNullableDateTime(reader["EndDate"]),
-                            NotifyBeforeInMinutes = DeNullInt(reader["NotifyBeforeInMinutes"]),
+                            Id = DBHelper.DeNullInt(reader["ID"]),
+                            Name = DBHelper.DeNullString(reader["Name"]),
+                            Notes = DBHelper.DeNullString(reader["AdditionalInfo"]),
+                            StartDate = DBHelper.GetNullableDateTime(reader["StartDate"]),
+                            EndDate = DBHelper.GetNullableDateTime(reader["EndDate"]),
+                            NotifyBeforeInMinutes = DBHelper.DeNullInt(reader["NotifyBeforeInMinutes"]),
                         }
                     );
                 }
@@ -160,52 +160,6 @@ namespace EventsPlanner
             MessageBox.Show("Deleted");
             cmd.Dispose();
             conn.Close();
-        }
-
-        public static string DeNullString(object o)
-        {
-            try
-            {
-                return Convert.IsDBNull(o) ? String.Empty : Convert.ToString(o);
-            }
-            catch (Exception)
-            {
-                return String.Empty;
-            }
-        }
-
-        public static DateTime? GetNullableDateTime(object o, bool silent = true)
-        {
-            try
-            {
-                return Convert.IsDBNull(o) ? null : (DateTime?)o;
-            }
-            catch (Exception)
-            {
-                if (silent)
-                {
-                    return null;
-                }
-
-                throw;
-            }
-        }
-
-        public static int DeNullInt(object o, int defaultValue = -1, bool silent = true)
-        {
-            try
-            {
-                return Convert.IsDBNull(o) ? defaultValue : Convert.ToInt32(o);
-            }
-            catch (Exception)
-            {
-                if (silent)
-                {
-                    return defaultValue;
-                }
-
-                throw;
-            }
         }
     }
 }
