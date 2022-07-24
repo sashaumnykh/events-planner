@@ -16,6 +16,7 @@ namespace EventsPlanner
     {
         Database db = new Database();
         System.Timers.Timer notificationsTimer;
+        string searchName;
         public Dashboard()
         {
             InitializeComponent();
@@ -67,9 +68,16 @@ namespace EventsPlanner
             InitializeComponent();
         }
 
-        private void DisplayEvents()
+        private void DisplayUpcomingEvents()
         {
             var events = GetEvents();
+            var upcomingEvents = events.Where(e => e.StartDate > DateTime.Now).ToList();
+            DisplayEvents(upcomingEvents);
+        }
+
+        private void DisplayEvents(List<Event> events)
+        {
+            eventsContainer.Controls.Clear();
             foreach (var ev in events)
             {
                 UserControlBlank e = new UserControlBlank();
@@ -89,8 +97,6 @@ namespace EventsPlanner
             res = res.OrderBy(e => e.StartDate?.Date).ThenBy(e => e.EndDate?.Date).ToList();
             return res;
         }
-
-        
 
         private void lDashboardTitle_Click(object sender, EventArgs e)
         {
@@ -120,6 +126,28 @@ namespace EventsPlanner
         }
 
         private void lEventNotification_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var searchName = this.tbSearch.Text;
+            var events = Database.SearchEventsByName(searchName);
+            DisplayEvents(events);
+        }
+
+        private void tbSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click_1(object sender, EventArgs e)
         {
 
         }

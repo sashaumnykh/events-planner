@@ -35,6 +35,9 @@ namespace EventsPlanner
             this.lUpcomingEvents = new System.Windows.Forms.Label();
             this.btnRefreshDashboard = new System.Windows.Forms.Button();
             this.lEventNotification = new System.Windows.Forms.Label();
+            this.tbSearch = new System.Windows.Forms.TextBox();
+            this.lbSearch = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // eventsContainer
@@ -49,6 +52,7 @@ namespace EventsPlanner
             // 
             // btnAddNewEvent
             // 
+            this.btnAddNewEvent.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNewEvent.Location = new System.Drawing.Point(25, 80);
             this.btnAddNewEvent.Name = "btnAddNewEvent";
             this.btnAddNewEvent.Size = new System.Drawing.Size(168, 40);
@@ -81,6 +85,7 @@ namespace EventsPlanner
             // 
             // btnRefreshDashboard
             // 
+            this.btnRefreshDashboard.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefreshDashboard.Location = new System.Drawing.Point(33, 464);
             this.btnRefreshDashboard.Name = "btnRefreshDashboard";
             this.btnRefreshDashboard.Size = new System.Drawing.Size(159, 41);
@@ -100,6 +105,37 @@ namespace EventsPlanner
             this.lEventNotification.TabIndex = 4;
             this.lEventNotification.Click += new System.EventHandler(this.lEventNotification_Click);
             // 
+            // tbSearch
+            // 
+            this.tbSearch.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearch.Location = new System.Drawing.Point(26, 159);
+            this.tbSearch.Multiline = true;
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(167, 20);
+            this.tbSearch.TabIndex = 0;
+            this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
+            // 
+            // lbSearch
+            // 
+            this.lbSearch.AutoSize = true;
+            this.lbSearch.Font = new System.Drawing.Font("Montserrat Subrayada", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSearch.Location = new System.Drawing.Point(25, 140);
+            this.lbSearch.Name = "lbSearch";
+            this.lbSearch.Size = new System.Drawing.Size(152, 14);
+            this.lbSearch.TabIndex = 6;
+            this.lbSearch.Text = "Search event by name:";
+            this.lbSearch.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(221, 157);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 0;
+            this.btnSearch.Text = "search";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -107,6 +143,9 @@ namespace EventsPlanner
             this.AutoScroll = true;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1317, 542);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.lbSearch);
+            this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.lEventNotification);
             this.Controls.Add(this.btnRefreshDashboard);
             this.Controls.Add(this.lUpcomingEvents);
@@ -118,7 +157,7 @@ namespace EventsPlanner
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.DisplayEvents();
+
         }
 
         #endregion
@@ -129,5 +168,8 @@ namespace EventsPlanner
         private System.Windows.Forms.Label lUpcomingEvents;
         private System.Windows.Forms.Button btnRefreshDashboard;
         private System.Windows.Forms.Label lEventNotification;
+        private System.Windows.Forms.TextBox tbSearch;
+        private System.Windows.Forms.Label lbSearch;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
