@@ -90,6 +90,7 @@ namespace EventsPlanner
             // 
             // btnEditEvent
             // 
+            this.btnEditEvent.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditEvent.Location = new System.Drawing.Point(18, 321);
             this.btnEditEvent.Name = "btnEditEvent";
             this.btnEditEvent.Size = new System.Drawing.Size(84, 23);
@@ -100,6 +101,7 @@ namespace EventsPlanner
             // 
             // btnDeleteEvent
             // 
+            this.btnDeleteEvent.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteEvent.Location = new System.Drawing.Point(135, 321);
             this.btnDeleteEvent.Name = "btnDeleteEvent";
             this.btnDeleteEvent.Size = new System.Drawing.Size(84, 23);

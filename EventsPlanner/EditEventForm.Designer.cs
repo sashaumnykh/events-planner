@@ -47,9 +47,10 @@ namespace EventsPlanner
             // 
             // numNotifyMinutes
             // 
+            this.numNotifyMinutes.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numNotifyMinutes.Location = new System.Drawing.Point(156, 269);
             this.numNotifyMinutes.Name = "numNotifyMinutes";
-            this.numNotifyMinutes.Size = new System.Drawing.Size(53, 20);
+            this.numNotifyMinutes.Size = new System.Drawing.Size(53, 21);
             this.numNotifyMinutes.TabIndex = 17;
             this.numNotifyMinutes.ValueChanged += new System.EventHandler(this.numNotifyMinutes_ValueChanged);
             // 
@@ -78,21 +79,23 @@ namespace EventsPlanner
             // dtpEditEventEnd
             // 
             this.dtpEditEventEnd.CustomFormat = "MM/dd/yyyy hh:mm";
+            this.dtpEditEventEnd.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpEditEventEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpEditEventEnd.Location = new System.Drawing.Point(54, 175);
             this.dtpEditEventEnd.Name = "dtpEditEventEnd";
             this.dtpEditEventEnd.ShowUpDown = true;
-            this.dtpEditEventEnd.Size = new System.Drawing.Size(124, 20);
+            this.dtpEditEventEnd.Size = new System.Drawing.Size(124, 21);
             this.dtpEditEventEnd.TabIndex = 13;
             // 
             // dtpEditEventStart
             // 
             this.dtpEditEventStart.CustomFormat = "MM/dd/yyyy hh:mm";
+            this.dtpEditEventStart.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpEditEventStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpEditEventStart.Location = new System.Drawing.Point(51, 112);
             this.dtpEditEventStart.Name = "dtpEditEventStart";
             this.dtpEditEventStart.ShowUpDown = true;
-            this.dtpEditEventStart.Size = new System.Drawing.Size(124, 20);
+            this.dtpEditEventStart.Size = new System.Drawing.Size(124, 21);
             this.dtpEditEventStart.TabIndex = 14;
             this.dtpEditEventStart.ValueChanged += new System.EventHandler(this.dtpEditEventStart_ValueChanged);
             // 
@@ -160,17 +163,19 @@ namespace EventsPlanner
             // 
             // tbEditEventInfo
             // 
+            this.tbEditEventInfo.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEditEventInfo.Location = new System.Drawing.Point(51, 233);
             this.tbEditEventInfo.Name = "tbEditEventInfo";
-            this.tbEditEventInfo.Size = new System.Drawing.Size(216, 20);
+            this.tbEditEventInfo.Size = new System.Drawing.Size(216, 21);
             this.tbEditEventInfo.TabIndex = 5;
             this.tbEditEventInfo.TextChanged += new System.EventHandler(this.tbEditEventInfo_TextChanged);
             // 
             // tbEditEventName
             // 
+            this.tbEditEventName.Font = new System.Drawing.Font("Montserrat Subrayada", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEditEventName.Location = new System.Drawing.Point(51, 52);
             this.tbEditEventName.Name = "tbEditEventName";
-            this.tbEditEventName.Size = new System.Drawing.Size(216, 20);
+            this.tbEditEventName.Size = new System.Drawing.Size(216, 21);
             this.tbEditEventName.TabIndex = 6;
             this.tbEditEventName.TextChanged += new System.EventHandler(this.tbEditEventName_TextChanged);
             // 
