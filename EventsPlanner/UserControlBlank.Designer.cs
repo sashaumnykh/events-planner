@@ -90,6 +90,7 @@ namespace EventsPlanner
             this.btnEditEvent.TabIndex = 3;
             this.btnEditEvent.Text = "Edit";
             this.btnEditEvent.UseVisualStyleBackColor = true;
+            this.btnEditEvent.Click += new System.EventHandler(this.btnEditEvent_Click);
             // 
             // btnDeleteEvent
             // 

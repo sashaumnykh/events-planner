@@ -40,7 +40,7 @@ namespace EventsPlanner
                 var toNotifyList = timeDifference.Where(td => (td.Value > 0 && td.Value < (double)td.Minutes)).OrderBy(td => td.Value).ToList();
                 if (toNotifyList.Count > 0)
                 {
-                    Entities notificationEvent;
+                    Event notificationEvent;
                     var notificationText = new StringBuilder("You have some events soon:");
                     toNotifyList.ForEach(tn => {
                         notificationEvent = events.Find(ev => ev.Id == tn.Id);
@@ -83,9 +83,9 @@ namespace EventsPlanner
             Database.DeleteEvent(id);
         }
 
-        public List<Entities> GetEvents()
+        public List<Event> GetEvents()
         {
-            List<Entities> res = Database.GetAllEvents();
+            List<Event> res = Database.GetAllEvents();
             res = res.OrderBy(e => e.StartDate?.Date).ThenBy(e => e.EndDate?.Date).ToList();
             return res;
         }

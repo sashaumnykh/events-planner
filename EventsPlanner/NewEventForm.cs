@@ -47,7 +47,7 @@ namespace EventsPlanner
             else
             {
                 int? minutes = (int)numNotifyMinutes.Value;
-                Entities toAdd = new Entities
+                Event toAdd = new Event
                 {
                     Name = tbNewEventName.Text,
                     StartDate = dtpNewEventStart.Value,

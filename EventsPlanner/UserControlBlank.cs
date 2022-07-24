@@ -19,7 +19,7 @@ namespace EventsPlanner
             InitializeComponent();
         }
 
-        public void PopulateEventInfo(Entities ev)
+        public void PopulateEventInfo(Event ev)
         {
             lEventId.Text = ev.Id.ToString();
             lEventName.Text = ev.Name;
@@ -56,6 +56,14 @@ namespace EventsPlanner
         private void lMinutes_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEditEvent_Click(object sender, EventArgs e)
+        {
+            var id = Int32.Parse(this.lEventId.Text);
+            var ev = Database.GetEventById(id);
+            EditEventForm editEventForm = new EditEventForm(ev);
+            editEventForm.Show();
         }
     }
 }
