@@ -142,6 +142,12 @@ namespace EventsPlanner
             return res;
         }
 
+        internal static List<Event> SearchEventsByName(string searchName)
+        {
+            var events = GetAllEvents();
+            return events.Where(e => e.Name.ToLowerInvariant() == searchName.ToLowerInvariant()).ToList();
+        }
+
         internal static void DeleteEvent(int id)
         {
             Database db = new Database();
