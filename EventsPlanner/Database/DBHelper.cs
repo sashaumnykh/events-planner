@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EventsPlanner.Database
+namespace EventsPlanner
 {
     class DBHelper
     {
-      public static string DeNullString(object o)
+        public static string DeNullString(object o)
         {
             try
             {

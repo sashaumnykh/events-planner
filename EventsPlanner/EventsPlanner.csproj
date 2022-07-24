@@ -110,7 +110,8 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Database.cs" />
+    <Compile Include="Database\Database.cs" />
+    <Compile Include="Database\DBHelper.cs" />
     <Compile Include="EditEventForm.cs">
       <SubType>Form</SubType>
     </Compile>
