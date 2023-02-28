@@ -1,5 +1,7 @@
 # events-planner
 
+тестовое задание для компании Directum
+
 open .sln file: planner\Planner\Planner.sln
 ---
 **рекомендации по тестированию:**
